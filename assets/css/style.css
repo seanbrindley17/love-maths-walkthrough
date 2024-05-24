@@ -92,7 +92,6 @@ body {
     font-family: "Raleway", sans-serif;
     text-transform: uppercase;
     letter-spacing: 1.2px;
-    color: white;
 }
 
 .btn:focus {
@@ -177,7 +176,13 @@ body {
 
 /* --------- Media queries */
 
-@media (max-width: 414px) {
+@media screen and (min-width: 400px) {
+    .btn--big {
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 425px) {
     .controls-area {
         width: 100%;
     }
@@ -232,7 +237,7 @@ body {
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 360px) {
     .game-area {
         height: 70vh;
     }
